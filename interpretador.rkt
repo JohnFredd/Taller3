@@ -325,3 +325,15 @@
               (if (number? longitud-r)
                 (+ longitud-r 1)
                 #f))))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;  a)
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;declarar (
+;;      @radio=2.5;
+;;      @areaCirculo= procedimiento (@radio) haga ((3.1416 * @radio) * @radio) finProc
+;;     ) { 
+;;         evaluar @areaCirculo (@radio) finEval  
+;;       }
