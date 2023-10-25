@@ -340,9 +340,11 @@
 ;;       }
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;recursivo {
-;;  @factorial(@n) = (
-;;    Si (@n <= 1) entonces 1
-;;    sino (@n * @factorial(@n - 1))
-;;  ) finRec
-;;} haga @factorial(5) finRec
+;;  @factorial(@n) = 
+;;    Si @n entonces (@n * evaluar @factorial(sub1(@n)) finEval)
+;;    sino 1 
+;;    finSI
+;;} haga evaluar @factorial(5) 
+;;       finEval 
+;;finRec
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
