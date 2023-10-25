@@ -380,6 +380,14 @@
 ;;  permite restar y multiplicar dos números haciendo uso solamente de las primitivas
 ;;  add1 y sub1. Incluye llamados a  "evaluar @restar (10, 3) finEval  ",  "evaluar @multiplicar (10, 3) finEval  ".
 ;;
+;;recursivo {
+;;  @resta(@numA; @numB) = 
+;;    Si @numB entonces evaluar @resta(sub1(@numA), sub1(@numB)) finEval
+;;    sino @numA
+;;    finSI
+;;} haga evaluar @resta(10,3) 
+;;       finEval 
+;;finRec
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
