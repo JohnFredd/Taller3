@@ -347,4 +347,13 @@
 ;;} haga evaluar @factorial(5) 
 ;;       finEval 
 ;;finRec
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;declarar (@integrantes = procedimiento () haga "Hernan-John-Y-Julian" finProc;
+;;          @saludar = procedimiento (@funcion) haga procedimiento () haga ("Hola:" concat @funcion) finProc finProc)
+;;{
+;;          declarar (@decorate = evaluar @saludar (evaluar @integrantes () finEval) finEval)
+;;          {
+;;                    evaluar @decorate () finEval
+;;          }
+;;}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
