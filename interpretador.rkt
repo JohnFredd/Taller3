@@ -99,7 +99,7 @@
 
     ;;;;;;
     
-    ;;(primitiva-unaria ("longitud") primitiva-longitud)
+    (primitiva-unaria ("longitud") primitiva-longitud)
     (primitiva-unaria ("add1") primitiva-add1)
     (primitiva-unaria ("sub1") primitiva-sub1)))
 
@@ -226,7 +226,7 @@
 (define aplicar-primitiva-un
   (lambda (prim-un args)
     (cases primitiva-unaria prim-un
-      ;;(primitiva-longitud () (longitud (ambiente? (car args))))
+      (primitiva-longitud () (- (string-length (symbol->string args)) 2))
       (primitiva-add1 () (+ (car args) 1))
       (primitiva-sub1 () (- (car args) 1)))))
 
