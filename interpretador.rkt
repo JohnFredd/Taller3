@@ -357,3 +357,12 @@
 ;;          }
 ;;}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;declarar (@integrantes = procedimiento () haga "Hernan-John-Y-Julian" finProc;
+;;          @saludar = procedimiento (@funcion) haga procedimiento (@arg) haga (("Hola:" concat evaluar @funcion () finEval) concat @arg) finProc finProc)
+;;{
+;;          declarar (@decorate = procedimiento (@arg) haga evaluar evaluar @saludar (@integrantes) finEval (@arg) finEval finProc)
+;;          {
+;;                    evaluar @decorate ("-ProfesoresFLP") finEval
+;;          }
+;;}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
