@@ -227,8 +227,8 @@
   (lambda (prim-un args)
     (cases primitiva-unaria prim-un
       (primitiva-longitud () (- (string-length (symbol->string args)) 2))
-      (primitiva-add1 () (+ (car args) 1))
-      (primitiva-sub1 () (- (car args) 1)))))
+      (primitiva-add1 () (+ args 1))
+      (primitiva-sub1 () (- args 1)))))
 
 ;true-value?: determina si un valor dado corresponde a un valor booleano falso o verdadero
 (define true-value?
@@ -338,3 +338,11 @@
 ;;     ) { 
 ;;         evaluar @areaCirculo (@radio) finEval  
 ;;       }
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;recursivo {
+;;  @factorial(@n) = (
+;;    Si (@n <= 1) entonces 1
+;;    sino (@n * @factorial(@n - 1))
+;;  ) finRec
+;;} haga @factorial(5) finRec
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
