@@ -365,6 +365,15 @@
 ;;  se incluye un llamado a la función recursiva: "evaluar @sumar (4, 5) finEval "
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;recursivo {
+;;  @sumar(@numA; @numB) = 
+;;    Si @numB entonces evaluar @sumar(add1(@numA), sub1(@numB)) finEval
+;;    sino @numA
+;;    finSI
+;;} haga evaluar @sumar(4,5) 
+;;       finEval 
+;;finRec
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
 ;;  Resta y multiplicacion
