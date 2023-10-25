@@ -95,7 +95,7 @@
     (primitiva-binaria ("-") primitiva-resta)
     (primitiva-binaria ("/") primitiva-div)
     (primitiva-binaria ("*") primitiva-multi)
-    ;;(primitiva-binaria ("concat") primitiva-concat)
+    (primitiva-binaria ("concat") primitiva-concat)
 
     ;;;;;;
     
@@ -219,7 +219,8 @@
       (primitiva-resta () (- (car args) (cadr args)))
       (primitiva-multi () (* (car args) (cadr args)))
       (primitiva-div () (/ (car args) (cadr args)))
-      ;;(primitiva-concat () (concatenar (car args) (cadr args)))
+      (primitiva-concat () (string->symbol (string-append (substring (symbol->string (car args)) 0 (- (string-length (symbol->string (car args))) 1))
+                                                          (substring (symbol->string (cadr args))  1 (string-length (symbol->string (cadr args)) )))))
       )))
 
 (define aplicar-primitiva-un
