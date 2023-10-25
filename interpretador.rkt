@@ -328,8 +328,11 @@
                 #f))))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;
-;;  a)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;  areaCirculo
+;;  calcula el area de un circulo dado un radio (A=PI*r*r)incluyendo valores flotantes
+;;  se invoca  utilizando una variable @radio como parámetro:
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;declarar (
@@ -339,6 +342,13 @@
 ;;         evaluar @areaCirculo (@radio) finEval  
 ;;       }
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;  factorial 
+;;  calcula el factorial de un número n.
+;;  y evalua para el factorial de 5 y el factorial de 10.
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;recursivo {
 ;;  @factorial(@n) = 
 ;;    Si @n entonces (@n * evaluar @factorial(sub1(@n)) finEval)
@@ -347,6 +357,37 @@
 ;;} haga evaluar @factorial(5) 
 ;;       finEval 
 ;;finRec
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;  Suma recursiva  
+;;  calcular una suma de forma recursiva. Debe hacer uso de las funciones add1 y sub1
+;;  se incluye un llamado a la función recursiva: "evaluar @sumar (4, 5) finEval "
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;recursivo {
+;;  @sumar(@numA; @numB) = 
+;;    Si @numB entonces evaluar @sumar(add1(@numA), sub1(@numB)) finEval
+;;    sino @numA
+;;    finSI
+;;} haga evaluar @sumar(4,5) 
+;;       finEval 
+;;finRec
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;  Resta y multiplicacion
+;;  permite restar y multiplicar dos números haciendo uso solamente de las primitivas
+;;  add1 y sub1. Incluye llamados a  "evaluar @restar (10, 3) finEval  ",  "evaluar @multiplicar (10, 3) finEval  ".
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;  @integrantes
+;;  muestre los nombres de los integrantes del grupo y adicionalmente crea un decorador
+;;  que al invocarlo saluda a los integrantes
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;declarar (@integrantes = procedimiento () haga "Hernan-John-Y-Julian" finProc;
 ;;          @saludar = procedimiento (@funcion) haga procedimiento () haga ("Hola:" concat evaluar @funcion () finEval) finProc finProc)
